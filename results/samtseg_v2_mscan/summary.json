@@ -1,0 +1,17 @@
+{
+  "run_name": "samtseg_v2_mscan",
+  "params_M": 52.163086,
+  "best_val_miou": 0.42713648080825806,
+  "best_epoch": 73,
+  "config": {
+    "encoder": "mscan_l",
+    "pretrained": true,
+    "use_cbam": true,
+    "epochs": 500,
+    "batch_size": 4,
+    "lambda_sev": 0.1,
+    "lambda_cons": 0.05,
+    "lambda_dice": 0.5,
+    "lambda_aux": 0.2
+  }
+}

@@ -1,0 +1,26 @@
+Metric,Value
+model,SegNeXt MSCAN-L + LightHamHead (PlantSeg baseline reproduction)
+num_classes,10
+optimizer,"AdamW lr=6e-05 betas=(0.9,0.999) wd=0.01 (head lr x10, no decay on pos_block/norm)"
+schedule,"PolyLR power=1.0, warmup=1500, total_iters=160000"
+batch_size,4
+crop_size,512x512
+best_val_mIoU,0.4300
+test_mIoU,0.4172
+test_disease_mIoU,0.3642
+test_mDice,0.5597
+test_pixel_acc,0.8689
+test_disease_F1,0.5170
+test_val_loss,0.5607
+
+Per-class test IoU,
+test_iou_background,0.8946
+test_iou_potato_early_blight,0.3268
+test_iou_potato_late_blight,0.4760
+test_iou_tomato_bacterial_leaf_spot,0.1325
+test_iou_tomato_early_blight,0.3428
+test_iou_tomato_late_blight,0.5561
+test_iou_tomato_leaf_mold,0.5957
+test_iou_tomato_mosaic_virus,0.2744
+test_iou_tomato_septoria_leaf_spot,0.2041
+test_iou_tomato_yellow_leaf_curl_virus,0.3693

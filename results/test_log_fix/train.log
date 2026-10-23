@@ -1,0 +1,9 @@
+2026-10-21 16:43:53,047 | INFO    | device=cuda run=test_log_fix
+2026-10-21 16:43:53,047 | INFO    | encoder=mscan_l pretrained=True
+2026-10-21 16:43:53,047 | INFO    | train = PlantSeg train + Roboflow potato | val/test = PlantSeg only
+2026-10-21 16:43:53,070 | INFO    | UnifiedSegDataset[train]: 1186 records (563 PlantSeg, 623 Roboflow)
+2026-10-21 16:43:53,086 | INFO    | UnifiedSegDataset[val]: 90 records (90 PlantSeg, 0 Roboflow)
+2026-10-21 16:43:53,087 | INFO    | train batches=593 val batches=45
+2026-10-21 16:43:54,079 | INFO    | params 52.16M  classes=10
+2026-10-21 16:43:54,080 | INFO    | optimizer groups: encoder 1244 tensors @6e-5, decoder/heads 86 tensors @6e-4
+2026-10-21 16:47:38,769 | INFO    | ep   1 | 224.7s | loss 2.6575 (seg 1.6216 dice 0.9480 aux 1.3649 bnd 0.7172 sev 0.5510 cons 0.3720) | val mIoU 0.0842 dis 0.0000 dice 0.0914 f1 0.0000 | sev 0.244 w1 0.522 rmae 0.123 | lr 2.4e-05  <- best

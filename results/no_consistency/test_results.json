@@ -1,0 +1,41 @@
+{
+  "checkpoint": "C:\\Users\\student\\Desktop\\pdeu_kaam\\results\\no_consistency\\checkpoints\\best.pth",
+  "epoch": 58,
+  "test_mIoU": 0.27767226099967957,
+  "test_disease_mIoU": 0.21613678336143494,
+  "test_mDice": 0.39366722106933594,
+  "test_pixel_acc": 0.8027303814888,
+  "test_disease_F1": 0.3365198075771332,
+  "test_sev_grade_acc": 0.45625001192092896,
+  "test_sev_within1_acc": 0.8125,
+  "test_ratio_mae": 0.0942763239145279,
+  "per_class_iou": {
+    "background": 0.8314915895462036,
+    "potato_early_blight": 0.0,
+    "potato_late_blight": 0.14386209845542908,
+    "tomato_bacterial_leaf_spot": 0.19500678777694702,
+    "tomato_early_blight": 0.3369711637496948,
+    "tomato_late_blight": 0.2493828982114792,
+    "tomato_leaf_mold": 0.47644832730293274,
+    "tomato_mosaic_virus": 0.08562365174293518,
+    "tomato_septoria_leaf_spot": 0.2493516206741333,
+    "tomato_yellow_leaf_curl_virus": 0.20858460664749146
+  },
+  "per_class_f1": {
+    "background": 0.9079938530921936,
+    "potato_early_blight": 0.0,
+    "potato_late_blight": 0.2515375316143036,
+    "tomato_bacterial_leaf_spot": 0.3263693153858185,
+    "tomato_early_blight": 0.5040814280509949,
+    "tomato_late_blight": 0.3992097079753876,
+    "tomato_leaf_mold": 0.6453978419303894,
+    "tomato_mosaic_virus": 0.15774093568325043,
+    "tomato_septoria_leaf_spot": 0.3991696536540985,
+    "tomato_yellow_leaf_curl_virus": 0.345171719789505
+  },
+  "targets": {
+    "mIoU": 0.4452,
+    "mDice": 0.8,
+    "sev_acc": 0.8
+  }
+}

@@ -1,0 +1,8 @@
+2026-10-01 08:58:29,898 | INFO    | device=cuda run=plantseg_novelty_v2
+2026-10-01 08:58:29,898 | INFO    | encoder=resnet101 pretrained=True
+2026-10-01 08:58:29,898 | INFO    | train = PlantSeg train + Roboflow potato | val/test = PlantSeg only
+2026-10-01 08:58:29,917 | INFO    | UnifiedSegDataset[train]: 1186 records (563 PlantSeg, 623 Roboflow)
+2026-10-01 08:58:29,933 | INFO    | UnifiedSegDataset[val]: 90 records (90 PlantSeg, 0 Roboflow)
+2026-10-01 08:58:29,933 | INFO    | weighted sampler: rarest class weight 2.54e-04, most common 3.85e-03
+2026-10-01 08:58:29,933 | INFO    | train batches=296 val batches=23
+2026-10-01 08:58:51,372 | INFO    | params 59.28M  classes=10

@@ -1,0 +1,18 @@
+{
+  "run_name": "no_pretrained",
+  "params_M": 24.591064,
+  "best_val_miou": 0.19385066628456116,
+  "best_epoch": 37,
+  "config": {
+    "encoder": "resnet34",
+    "pretrained": false,
+    "cbam": true,
+    "lambda_sev": 1.0,
+    "lambda_cons": 0.5,
+    "epochs": 60,
+    "lr": 0.0003,
+    "batch_size": 8,
+    "weight_scheme": "sqrt_inv",
+    "sampler": true
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "run_name": "cbam_only",
+  "params_M": 24.591064,
+  "best_val_miou": 0.23874405026435852,
+  "best_epoch": 52,
+  "config": {
+    "encoder": "resnet34",
+    "pretrained": true,
+    "cbam": true,
+    "lambda_sev": 0.0,
+    "lambda_cons": 0.0,
+    "epochs": 60,
+    "lr": 0.0003,
+    "batch_size": 8,
+    "weight_scheme": "sqrt_inv",
+    "sampler": true
+  }
+}

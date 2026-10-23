@@ -1,0 +1,12 @@
+{
+  "run_name": "plantseg_novelty_final",
+  "params_M": 59.276718,
+  "best_val_miou": 0.3683367967605591,
+  "best_epoch": 37,
+  "config": {
+    "encoder": "resnet101",
+    "pretrained": true,
+    "epochs": 200,
+    "batch_size": 4
+  }
+}

@@ -1,0 +1,3 @@
+2026-10-01 08:56:39,942 | INFO    | device=cuda run=plantseg_novelty_v1
+2026-10-01 08:56:39,942 | INFO    | encoder=resnet101 pretrained=True
+2026-10-01 08:56:39,942 | INFO    | train = PlantSeg train + Roboflow potato | val/test = PlantSeg only

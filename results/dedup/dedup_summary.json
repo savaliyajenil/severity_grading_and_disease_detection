@@ -1,0 +1,9 @@
+{
+  "roboflow_scanned": 1072,
+  "plantseg_benchmark_images": 250,
+  "exact_duplicates": 0,
+  "near_duplicates": 0,
+  "hamming_threshold": 5,
+  "hash_size": 8,
+  "total_flagged": 0
+}

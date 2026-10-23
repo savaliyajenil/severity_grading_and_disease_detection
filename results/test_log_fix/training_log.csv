@@ -1,0 +1,2 @@
+Epoch,Seg_Loss,Total_Loss,Val_mIoU,Val_Disease_mIoU,Val_mDice,Val_Acc,Val_Disease_F1,LR
+1,1.6216,2.6575,0.0842,0.0000,0.0914,0.8418,0.0000,2.37e-05

@@ -1,0 +1,113 @@
+2026-10-22 09:31:22,433 | INFO    | device=cuda run=samtseg_v3_refixed_seed_0
+2026-10-22 09:31:22,433 | INFO    | encoder=mscan_l pretrained=True
+2026-10-22 09:31:22,433 | INFO    | train = PlantSeg train + Roboflow potato | val/test = PlantSeg only
+2026-10-22 09:31:22,464 | INFO    | UnifiedSegDataset[train]: 1186 records (563 PlantSeg, 623 Roboflow)
+2026-10-22 09:31:22,480 | INFO    | UnifiedSegDataset[val]: 90 records (90 PlantSeg, 0 Roboflow)
+2026-10-22 09:31:22,484 | INFO    | weighted sampler: rarest class weight 2.54e-04, most common 3.85e-03
+2026-10-22 09:31:22,484 | INFO    | train batches=395 val batches=30
+2026-10-22 09:31:23,497 | INFO    | params 52.16M  classes=10
+2026-10-22 09:31:23,500 | INFO    | optimizer groups: encoder 1244 tensors @6e-5, decoder/heads 86 tensors @6e-4
+2026-10-22 09:34:49,722 | INFO    | ep   1 | 206.2s | loss 2.7531 (seg 1.8515 dice 0.9517 aux 1.7096 bnd 0.0000 sev 0.6370 cons 0.4012) | val mIoU 0.0842 dis 0.0000 dice 0.0914 f1 0.0000 | sev 0.167 w1 0.567 rmae 0.110 | lr 1.6e-05  <- best
+2026-10-22 09:37:35,322 | INFO    | ep   2 | 165.6s | loss 1.5533 (seg 0.9085 dice 0.9112 aux 0.6424 bnd 0.0000 sev 0.5595 cons 0.0951) | val mIoU 0.0842 dis 0.0000 dice 0.0914 f1 0.0000 | sev 0.278 w1 0.722 rmae 0.091 | lr 3.2e-05
+2026-10-22 09:40:22,045 | INFO    | ep   3 | 166.7s | loss 1.3000 (seg 0.6941 dice 0.8944 aux 0.5527 bnd 0.0000 sev 0.4761 cons 0.0095) | val mIoU 0.0847 dis 0.0005 dice 0.0923 f1 0.0009 | sev 0.411 w1 0.778 rmae 0.087 | lr 4.7e-05  <- best
+2026-10-22 09:43:08,379 | INFO    | ep   4 | 166.3s | loss 1.1856 (seg 0.6057 dice 0.8833 aux 0.4821 bnd 0.0000 sev 0.4129 cons 0.0111) | val mIoU 0.1082 dis 0.0253 dice 0.1340 f1 0.0464 | sev 0.300 w1 0.800 rmae 0.081 | lr 6.0e-05  <- best
+2026-10-22 09:45:54,803 | INFO    | ep   5 | 166.4s | loss 1.1608 (seg 0.5891 dice 0.8742 aux 0.4702 bnd 0.0000 sev 0.4018 cons 0.0079) | val mIoU 0.1369 dis 0.0562 dice 0.1773 f1 0.0940 | sev 0.411 w1 0.822 rmae 0.080 | lr 6.0e-05  <- best
+2026-10-22 09:48:41,212 | INFO    | ep   6 | 166.4s | loss 1.1158 (seg 0.5579 dice 0.8607 aux 0.4487 bnd 0.0000 sev 0.3760 cons 0.0063) | val mIoU 0.1699 dis 0.0900 dice 0.2229 f1 0.1431 | sev 0.422 w1 0.800 rmae 0.076 | lr 6.0e-05  <- best
+2026-10-22 09:51:27,733 | INFO    | ep   7 | 166.5s | loss 1.0048 (seg 0.4707 dice 0.8522 aux 0.3681 bnd 0.0000 sev 0.3383 cons 0.0114) | val mIoU 0.1878 dis 0.1096 dice 0.2425 f1 0.1647 | sev 0.456 w1 0.778 rmae 0.081 | lr 5.9e-05  <- best
+2026-10-22 09:54:14,104 | INFO    | ep   8 | 166.4s | loss 1.0002 (seg 0.4702 dice 0.8462 aux 0.3714 bnd 0.0000 sev 0.3211 cons 0.0106) | val mIoU 0.2091 dis 0.1325 dice 0.2809 f1 0.2069 | sev 0.356 w1 0.756 rmae 0.085 | lr 5.9e-05  <- best
+2026-10-22 09:57:00,764 | INFO    | ep   9 | 166.7s | loss 0.9217 (seg 0.4109 dice 0.8370 aux 0.3149 bnd 0.0000 sev 0.2854 cons 0.0154) | val mIoU 0.2527 dis 0.1835 dice 0.3412 f1 0.2754 | sev 0.444 w1 0.800 rmae 0.080 | lr 5.9e-05  <- best
+2026-10-22 09:59:47,125 | INFO    | ep  10 | 166.4s | loss 0.9229 (seg 0.4170 dice 0.8258 aux 0.3214 bnd 0.0000 sev 0.2804 cons 0.0132) | val mIoU 0.3180 dis 0.2530 dice 0.4218 f1 0.3633 | sev 0.333 w1 0.900 rmae 0.074 | lr 5.9e-05  <- best
+2026-10-22 10:02:32,562 | INFO    | ep  11 | 165.4s | loss 0.8812 (seg 0.3870 dice 0.8159 aux 0.2992 bnd 0.0000 sev 0.2576 cons 0.0134) | val mIoU 0.2512 dis 0.1787 dice 0.3353 f1 0.2671 | sev 0.467 w1 0.856 rmae 0.083 | lr 5.9e-05
+2026-10-22 10:05:18,313 | INFO    | ep  12 | 165.8s | loss 0.8691 (seg 0.3819 dice 0.8083 aux 0.2932 bnd 0.0000 sev 0.2372 cons 0.0140) | val mIoU 0.2732 dis 0.2029 dice 0.3702 f1 0.3057 | sev 0.333 w1 0.867 rmae 0.083 | lr 5.8e-05
+2026-10-22 10:08:03,798 | INFO    | ep  13 | 165.5s | loss 0.8316 (seg 0.3548 dice 0.7995 aux 0.2699 bnd 0.0000 sev 0.2247 cons 0.0125) | val mIoU 0.2610 dis 0.1903 dice 0.3584 f1 0.2932 | sev 0.456 w1 0.833 rmae 0.079 | lr 5.8e-05
+2026-10-22 10:10:49,247 | INFO    | ep  14 | 165.4s | loss 0.8449 (seg 0.3649 dice 0.7953 aux 0.2815 bnd 0.0000 sev 0.2529 cons 0.0148) | val mIoU 0.3137 dis 0.2481 dice 0.4120 f1 0.3522 | sev 0.433 w1 0.856 rmae 0.074 | lr 5.8e-05
+2026-10-22 10:13:34,683 | INFO    | ep  15 | 165.4s | loss 0.7966 (seg 0.3303 dice 0.7875 aux 0.2508 bnd 0.0000 sev 0.2156 cons 0.0164) | val mIoU 0.2919 dis 0.2234 dice 0.3915 f1 0.3292 | sev 0.456 w1 0.856 rmae 0.073 | lr 5.8e-05
+2026-10-22 10:16:20,358 | INFO    | ep  16 | 165.7s | loss 0.7754 (seg 0.3169 dice 0.7779 aux 0.2385 bnd 0.0000 sev 0.2102 cons 0.0165) | val mIoU 0.2574 dis 0.1855 dice 0.3590 f1 0.2933 | sev 0.433 w1 0.800 rmae 0.079 | lr 5.8e-05
+2026-10-22 10:19:06,767 | INFO    | ep  17 | 166.4s | loss 0.7572 (seg 0.3011 dice 0.7761 aux 0.2285 bnd 0.0000 sev 0.2148 cons 0.0185) | val mIoU 0.3343 dis 0.2719 dice 0.4584 f1 0.4044 | sev 0.411 w1 0.789 rmae 0.078 | lr 5.7e-05  <- best
+2026-10-22 10:21:53,223 | INFO    | ep  18 | 166.5s | loss 0.7411 (seg 0.2912 dice 0.7713 aux 0.2192 bnd 0.0000 sev 0.1952 cons 0.0162) | val mIoU 0.3662 dis 0.3063 dice 0.4880 f1 0.4367 | sev 0.333 w1 0.700 rmae 0.091 | lr 5.7e-05  <- best
+2026-10-22 10:24:38,735 | INFO    | ep  19 | 165.5s | loss 0.7417 (seg 0.2907 dice 0.7707 aux 0.2198 bnd 0.0000 sev 0.2076 cons 0.0182) | val mIoU 0.3333 dis 0.2702 dice 0.4553 f1 0.4005 | sev 0.367 w1 0.800 rmae 0.082 | lr 5.7e-05
+2026-10-22 10:27:24,424 | INFO    | ep  20 | 165.7s | loss 0.7323 (seg 0.2891 dice 0.7619 aux 0.2145 bnd 0.0000 sev 0.1841 cons 0.0190) | val mIoU 0.3532 dis 0.2916 dice 0.4616 f1 0.4071 | sev 0.433 w1 0.878 rmae 0.072 | lr 5.7e-05
+2026-10-22 10:30:10,896 | INFO    | ep  21 | 166.5s | loss 0.7112 (seg 0.2729 dice 0.7586 aux 0.2026 bnd 0.0000 sev 0.1771 cons 0.0161) | val mIoU 0.3703 dis 0.3105 dice 0.4783 f1 0.4257 | sev 0.433 w1 0.811 rmae 0.080 | lr 5.7e-05  <- best
+2026-10-22 10:32:57,428 | INFO    | ep  22 | 166.5s | loss 0.7176 (seg 0.2801 dice 0.7547 aux 0.2100 bnd 0.0000 sev 0.1736 cons 0.0169) | val mIoU 0.3836 dis 0.3254 dice 0.5104 f1 0.4614 | sev 0.500 w1 0.844 rmae 0.072 | lr 5.6e-05  <- best
+2026-10-22 10:35:43,345 | INFO    | ep  23 | 165.9s | loss 0.7132 (seg 0.2761 dice 0.7567 aux 0.2026 bnd 0.0000 sev 0.1737 cons 0.0160) | val mIoU 0.3580 dis 0.2968 dice 0.4692 f1 0.4155 | sev 0.511 w1 0.856 rmae 0.071 | lr 5.6e-05
+2026-10-22 10:38:29,380 | INFO    | ep  24 | 166.0s | loss 0.6735 (seg 0.2470 dice 0.7487 aux 0.1812 bnd 0.0000 sev 0.1490 cons 0.0206) | val mIoU 0.3704 dis 0.3111 dice 0.4832 f1 0.4314 | sev 0.378 w1 0.789 rmae 0.085 | lr 5.6e-05
+2026-10-22 10:41:16,203 | INFO    | ep  25 | 166.8s | loss 0.6714 (seg 0.2445 dice 0.7449 aux 0.1793 bnd 0.0000 sev 0.1761 cons 0.0180) | val mIoU 0.3920 dis 0.3359 dice 0.5137 f1 0.4657 | sev 0.400 w1 0.811 rmae 0.088 | lr 5.6e-05  <- best
+2026-10-22 10:44:02,389 | INFO    | ep  26 | 166.2s | loss 0.6678 (seg 0.2448 dice 0.7453 aux 0.1770 bnd 0.0000 sev 0.1423 cons 0.0152) | val mIoU 0.3908 dis 0.3341 dice 0.5177 f1 0.4699 | sev 0.411 w1 0.756 rmae 0.090 | lr 5.6e-05
+2026-10-22 10:46:49,063 | INFO    | ep  27 | 166.7s | loss 0.6490 (seg 0.2300 dice 0.7388 aux 0.1676 bnd 0.0000 sev 0.1511 cons 0.0191) | val mIoU 0.4107 dis 0.3563 dice 0.5447 f1 0.5000 | sev 0.433 w1 0.756 rmae 0.087 | lr 5.5e-05  <- best
+2026-10-22 10:49:35,242 | INFO    | ep  28 | 166.2s | loss 0.6471 (seg 0.2309 dice 0.7335 aux 0.1664 bnd 0.0000 sev 0.1502 cons 0.0217) | val mIoU 0.4021 dis 0.3463 dice 0.5268 f1 0.4798 | sev 0.444 w1 0.800 rmae 0.081 | lr 5.5e-05
+2026-10-22 10:52:21,142 | INFO    | ep  29 | 165.9s | loss 0.6264 (seg 0.2114 dice 0.7371 aux 0.1557 bnd 0.0000 sev 0.1446 cons 0.0167) | val mIoU 0.3803 dis 0.3226 dice 0.5045 f1 0.4554 | sev 0.433 w1 0.778 rmae 0.081 | lr 5.5e-05
+2026-10-22 10:55:07,091 | INFO    | ep  30 | 165.9s | loss 0.6017 (seg 0.1975 dice 0.7241 aux 0.1410 bnd 0.0000 sev 0.1313 cons 0.0175) | val mIoU 0.3639 dis 0.3042 dice 0.4847 f1 0.4332 | sev 0.411 w1 0.789 rmae 0.084 | lr 5.5e-05
+2026-10-22 10:57:53,036 | INFO    | ep  31 | 165.9s | loss 0.6314 (seg 0.2196 dice 0.7277 aux 0.1587 bnd 0.0000 sev 0.1527 cons 0.0188) | val mIoU 0.3957 dis 0.3395 dice 0.5249 f1 0.4779 | sev 0.433 w1 0.844 rmae 0.075 | lr 5.4e-05
+2026-10-22 11:00:38,747 | INFO    | ep  32 | 165.7s | loss 0.5968 (seg 0.1931 dice 0.7248 aux 0.1395 bnd 0.0000 sev 0.1241 cons 0.0190) | val mIoU 0.4003 dis 0.3449 dice 0.5318 f1 0.4857 | sev 0.478 w1 0.811 rmae 0.074 | lr 5.4e-05
+2026-10-22 11:03:24,639 | INFO    | ep  33 | 165.9s | loss 0.6250 (seg 0.2186 dice 0.7216 aux 0.1600 bnd 0.0000 sev 0.1258 cons 0.0195) | val mIoU 0.3969 dis 0.3408 dice 0.5248 f1 0.4777 | sev 0.411 w1 0.800 rmae 0.089 | lr 5.4e-05
+2026-10-22 11:06:10,532 | INFO    | ep  34 | 165.9s | loss 0.5963 (seg 0.1966 dice 0.7184 aux 0.1370 bnd 0.0000 sev 0.1221 cons 0.0165) | val mIoU 0.3868 dis 0.3290 dice 0.5068 f1 0.4575 | sev 0.444 w1 0.833 rmae 0.082 | lr 5.4e-05
+2026-10-22 11:08:56,429 | INFO    | ep  35 | 165.9s | loss 0.5846 (seg 0.1885 dice 0.7160 aux 0.1292 bnd 0.0000 sev 0.1131 cons 0.0194) | val mIoU 0.3881 dis 0.3307 dice 0.5121 f1 0.4634 | sev 0.356 w1 0.756 rmae 0.096 | lr 5.4e-05
+2026-10-22 11:11:42,297 | INFO    | ep  36 | 165.9s | loss 0.5966 (seg 0.1960 dice 0.7191 aux 0.1411 bnd 0.0000 sev 0.1190 cons 0.0189) | val mIoU 0.3996 dis 0.3431 dice 0.5178 f1 0.4696 | sev 0.433 w1 0.789 rmae 0.080 | lr 5.3e-05
+2026-10-22 11:14:29,155 | INFO    | ep  37 | 166.9s | loss 0.5990 (seg 0.1986 dice 0.7187 aux 0.1408 bnd 0.0000 sev 0.1196 cons 0.0174) | val mIoU 0.4134 dis 0.3589 dice 0.5334 f1 0.4871 | sev 0.411 w1 0.778 rmae 0.086 | lr 5.3e-05  <- best
+2026-10-22 11:17:15,062 | INFO    | ep  38 | 165.9s | loss 0.5920 (seg 0.1932 dice 0.7182 aux 0.1359 bnd 0.0000 sev 0.1157 cons 0.0185) | val mIoU 0.4111 dis 0.3559 dice 0.5363 f1 0.4901 | sev 0.433 w1 0.778 rmae 0.084 | lr 5.3e-05
+2026-10-22 11:20:01,180 | INFO    | ep  39 | 166.1s | loss 0.5571 (seg 0.1662 dice 0.7153 aux 0.1130 bnd 0.0000 sev 0.0980 cons 0.0175) | val mIoU 0.4112 dis 0.3565 dice 0.5293 f1 0.4826 | sev 0.389 w1 0.733 rmae 0.097 | lr 5.3e-05
+2026-10-22 11:22:47,259 | INFO    | ep  40 | 166.1s | loss 0.5658 (seg 0.1718 dice 0.7190 aux 0.1223 bnd 0.0000 sev 0.0928 cons 0.0157) | val mIoU 0.4008 dis 0.3450 dice 0.5330 f1 0.4868 | sev 0.367 w1 0.756 rmae 0.085 | lr 5.3e-05
+2026-10-22 11:25:33,264 | INFO    | ep  41 | 166.0s | loss 0.5626 (seg 0.1713 dice 0.7136 aux 0.1148 bnd 0.0000 sev 0.1082 cons 0.0160) | val mIoU 0.3998 dis 0.3435 dice 0.5305 f1 0.4838 | sev 0.422 w1 0.811 rmae 0.080 | lr 5.2e-05
+2026-10-22 11:28:19,113 | INFO    | ep  42 | 165.8s | loss 0.5414 (seg 0.1551 dice 0.7093 aux 0.1041 bnd 0.0000 sev 0.1003 cons 0.0162) | val mIoU 0.3986 dis 0.3422 dice 0.5188 f1 0.4708 | sev 0.400 w1 0.789 rmae 0.083 | lr 5.2e-05
+2026-10-22 11:31:04,672 | INFO    | ep  43 | 165.6s | loss 0.5483 (seg 0.1619 dice 0.7051 aux 0.1133 bnd 0.0000 sev 0.1014 cons 0.0189) | val mIoU 0.4036 dis 0.3474 dice 0.5230 f1 0.4753 | sev 0.367 w1 0.822 rmae 0.081 | lr 5.2e-05
+2026-10-22 11:33:51,715 | INFO    | ep  44 | 167.0s | loss 0.5522 (seg 0.1671 dice 0.7030 aux 0.1168 bnd 0.0000 sev 0.0926 cons 0.0203) | val mIoU 0.4277 dis 0.3745 dice 0.5531 f1 0.5089 | sev 0.489 w1 0.800 rmae 0.078 | lr 5.2e-05  <- best
+2026-10-22 11:36:38,207 | INFO    | ep  45 | 166.5s | loss 0.5479 (seg 0.1601 dice 0.7101 aux 0.1116 bnd 0.0000 sev 0.0968 cons 0.0169) | val mIoU 0.4137 dis 0.3590 dice 0.5402 f1 0.4946 | sev 0.456 w1 0.789 rmae 0.082 | lr 5.2e-05
+2026-10-22 11:39:23,886 | INFO    | ep  46 | 165.7s | loss 0.5506 (seg 0.1654 dice 0.7048 aux 0.1158 bnd 0.0000 sev 0.0885 cons 0.0167) | val mIoU 0.4045 dis 0.3490 dice 0.5281 f1 0.4813 | sev 0.422 w1 0.767 rmae 0.087 | lr 5.1e-05
+2026-10-22 11:42:09,662 | INFO    | ep  47 | 165.8s | loss 0.5296 (seg 0.1487 dice 0.7041 aux 0.1007 bnd 0.0000 sev 0.0790 cons 0.0157) | val mIoU 0.4126 dis 0.3586 dice 0.5384 f1 0.4931 | sev 0.400 w1 0.767 rmae 0.090 | lr 5.1e-05
+2026-10-22 11:44:56,511 | INFO    | ep  48 | 166.8s | loss 0.5495 (seg 0.1649 dice 0.7052 aux 0.1124 bnd 0.0000 sev 0.0858 cons 0.0182) | val mIoU 0.4281 dis 0.3753 dice 0.5609 f1 0.5178 | sev 0.356 w1 0.767 rmae 0.090 | lr 5.1e-05  <- best
+2026-10-22 11:47:42,516 | INFO    | ep  49 | 166.0s | loss 0.5338 (seg 0.1542 dice 0.7004 aux 0.1021 bnd 0.0000 sev 0.0813 cons 0.0155) | val mIoU 0.4128 dis 0.3580 dice 0.5423 f1 0.4969 | sev 0.400 w1 0.778 rmae 0.093 | lr 5.1e-05
+2026-10-22 11:50:28,886 | INFO    | ep  50 | 166.4s | loss 0.5222 (seg 0.1436 dice 0.6995 aux 0.0956 bnd 0.0000 sev 0.0887 cons 0.0180) | val mIoU 0.3841 dis 0.3260 dice 0.5035 f1 0.4537 | sev 0.367 w1 0.800 rmae 0.085 | lr 5.1e-05
+2026-10-22 11:53:14,676 | INFO    | ep  51 | 165.8s | loss 0.5150 (seg 0.1391 dice 0.6997 aux 0.0920 bnd 0.0000 sev 0.0679 cons 0.0177) | val mIoU 0.3870 dis 0.3301 dice 0.5160 f1 0.4682 | sev 0.422 w1 0.756 rmae 0.090 | lr 5.0e-05
+2026-10-22 11:56:00,816 | INFO    | ep  52 | 166.1s | loss 0.5184 (seg 0.1409 dice 0.7026 aux 0.0943 bnd 0.0000 sev 0.0643 cons 0.0187) | val mIoU 0.4100 dis 0.3551 dice 0.5354 f1 0.4893 | sev 0.422 w1 0.767 rmae 0.089 | lr 5.0e-05
+2026-10-22 11:58:46,785 | INFO    | ep  53 | 166.0s | loss 0.5271 (seg 0.1480 dice 0.7012 aux 0.0997 bnd 0.0000 sev 0.0777 cons 0.0165) | val mIoU 0.4039 dis 0.3491 dice 0.5313 f1 0.4853 | sev 0.444 w1 0.789 rmae 0.089 | lr 5.0e-05
+2026-10-22 12:01:33,031 | INFO    | ep  54 | 166.2s | loss 0.5227 (seg 0.1440 dice 0.6980 aux 0.0995 bnd 0.0000 sev 0.0896 cons 0.0181) | val mIoU 0.4254 dis 0.3729 dice 0.5530 f1 0.5093 | sev 0.456 w1 0.800 rmae 0.084 | lr 5.0e-05
+2026-10-22 12:04:18,781 | INFO    | ep  55 | 165.8s | loss 0.4997 (seg 0.1279 dice 0.6949 aux 0.0835 bnd 0.0000 sev 0.0684 cons 0.0160) | val mIoU 0.4199 dis 0.3656 dice 0.5502 f1 0.5055 | sev 0.389 w1 0.778 rmae 0.086 | lr 5.0e-05
+2026-10-22 12:07:04,786 | INFO    | ep  56 | 166.0s | loss 0.5173 (seg 0.1437 dice 0.6948 aux 0.0919 bnd 0.0000 sev 0.0707 cons 0.0157) | val mIoU 0.3841 dis 0.3259 dice 0.5030 f1 0.4532 | sev 0.444 w1 0.833 rmae 0.074 | lr 4.9e-05
+2026-10-22 12:09:50,664 | INFO    | ep  57 | 165.9s | loss 0.4919 (seg 0.1219 dice 0.6944 aux 0.0776 bnd 0.0000 sev 0.0641 cons 0.0175) | val mIoU 0.3934 dis 0.3367 dice 0.5154 f1 0.4671 | sev 0.400 w1 0.778 rmae 0.083 | lr 4.9e-05
+2026-10-22 12:12:36,929 | INFO    | ep  58 | 166.3s | loss 0.5048 (seg 0.1349 dice 0.6898 aux 0.0867 bnd 0.0000 sev 0.0686 cons 0.0162) | val mIoU 0.4146 dis 0.3601 dice 0.5451 f1 0.5000 | sev 0.378 w1 0.711 rmae 0.091 | lr 4.9e-05
+2026-10-22 12:15:22,877 | INFO    | ep  59 | 165.9s | loss 0.5212 (seg 0.1474 dice 0.6903 aux 0.0998 bnd 0.0000 sev 0.0780 cons 0.0174) | val mIoU 0.4050 dis 0.3496 dice 0.5213 f1 0.4737 | sev 0.378 w1 0.800 rmae 0.086 | lr 4.9e-05
+2026-10-22 12:18:09,172 | INFO    | ep  60 | 166.3s | loss 0.5202 (seg 0.1450 dice 0.6968 aux 0.0971 bnd 0.0000 sev 0.0637 cons 0.0194) | val mIoU 0.4124 dis 0.3574 dice 0.5419 f1 0.4964 | sev 0.411 w1 0.811 rmae 0.077 | lr 4.9e-05
+2026-10-22 12:20:55,440 | INFO    | ep  61 | 166.3s | loss 0.5230 (seg 0.1470 dice 0.6961 aux 0.0989 bnd 0.0000 sev 0.0730 cons 0.0158) | val mIoU 0.3952 dis 0.3387 dice 0.5207 f1 0.4731 | sev 0.400 w1 0.811 rmae 0.080 | lr 4.8e-05
+2026-10-22 12:23:41,462 | INFO    | ep  62 | 166.0s | loss 0.5002 (seg 0.1290 dice 0.6950 aux 0.0831 bnd 0.0000 sev 0.0604 cons 0.0201) | val mIoU 0.4103 dis 0.3558 dice 0.5368 f1 0.4911 | sev 0.400 w1 0.711 rmae 0.091 | lr 4.8e-05
+2026-10-22 12:26:27,747 | INFO    | ep  63 | 166.3s | loss 0.5190 (seg 0.1452 dice 0.6928 aux 0.0970 bnd 0.0000 sev 0.0701 cons 0.0190) | val mIoU 0.3986 dis 0.3429 dice 0.5212 f1 0.4738 | sev 0.344 w1 0.767 rmae 0.089 | lr 4.8e-05
+2026-10-22 12:29:13,660 | INFO    | ep  64 | 165.9s | loss 0.4941 (seg 0.1244 dice 0.6917 aux 0.0812 bnd 0.0000 sev 0.0681 cons 0.0161) | val mIoU 0.4078 dis 0.3528 dice 0.5310 f1 0.4845 | sev 0.389 w1 0.800 rmae 0.084 | lr 4.8e-05
+2026-10-22 12:31:59,678 | INFO    | ep  65 | 166.0s | loss 0.4873 (seg 0.1216 dice 0.6874 aux 0.0796 bnd 0.0000 sev 0.0524 cons 0.0175) | val mIoU 0.3988 dis 0.3432 dice 0.5316 f1 0.4854 | sev 0.433 w1 0.811 rmae 0.082 | lr 4.8e-05
+2026-10-22 12:34:45,480 | INFO    | ep  66 | 165.8s | loss 0.5000 (seg 0.1297 dice 0.6905 aux 0.0842 bnd 0.0000 sev 0.0727 cons 0.0176) | val mIoU 0.4025 dis 0.3467 dice 0.5292 f1 0.4825 | sev 0.344 w1 0.767 rmae 0.086 | lr 4.7e-05
+2026-10-22 12:37:31,543 | INFO    | ep  67 | 166.1s | loss 0.4932 (seg 0.1237 dice 0.6943 aux 0.0783 bnd 0.0000 sev 0.0603 cons 0.0140) | val mIoU 0.4037 dis 0.3479 dice 0.5308 f1 0.4842 | sev 0.378 w1 0.733 rmae 0.087 | lr 4.7e-05
+2026-10-22 12:40:17,844 | INFO    | ep  68 | 166.3s | loss 0.4720 (seg 0.1096 dice 0.6841 aux 0.0678 bnd 0.0000 sev 0.0586 cons 0.0176) | val mIoU 0.4119 dis 0.3572 dice 0.5373 f1 0.4915 | sev 0.367 w1 0.767 rmae 0.082 | lr 4.7e-05
+2026-10-22 12:43:04,112 | INFO    | ep  69 | 166.3s | loss 0.4710 (seg 0.1071 dice 0.6889 aux 0.0671 bnd 0.0000 sev 0.0506 cons 0.0197) | val mIoU 0.4111 dis 0.3561 dice 0.5373 f1 0.4914 | sev 0.356 w1 0.789 rmae 0.087 | lr 4.7e-05
+2026-10-22 12:45:50,037 | INFO    | ep  70 | 165.9s | loss 0.4850 (seg 0.1177 dice 0.6878 aux 0.0758 bnd 0.0000 sev 0.0722 cons 0.0197) | val mIoU 0.4097 dis 0.3553 dice 0.5383 f1 0.4929 | sev 0.322 w1 0.767 rmae 0.094 | lr 4.7e-05
+2026-10-22 12:48:36,080 | INFO    | ep  71 | 166.0s | loss 0.4841 (seg 0.1193 dice 0.6860 aux 0.0773 bnd 0.0000 sev 0.0544 cons 0.0172) | val mIoU 0.4182 dis 0.3641 dice 0.5446 f1 0.4996 | sev 0.344 w1 0.800 rmae 0.086 | lr 4.6e-05
+2026-10-22 12:51:22,011 | INFO    | ep  72 | 165.9s | loss 0.4853 (seg 0.1208 dice 0.6851 aux 0.0800 bnd 0.0000 sev 0.0499 cons 0.0182) | val mIoU 0.4234 dis 0.3698 dice 0.5460 f1 0.5011 | sev 0.356 w1 0.800 rmae 0.085 | lr 4.6e-05
+2026-10-22 12:54:07,954 | INFO    | ep  73 | 165.9s | loss 0.4784 (seg 0.1143 dice 0.6859 aux 0.0731 bnd 0.0000 sev 0.0575 cons 0.0168) | val mIoU 0.4127 dis 0.3580 dice 0.5401 f1 0.4945 | sev 0.378 w1 0.744 rmae 0.095 | lr 4.6e-05
+2026-10-22 12:56:54,021 | INFO    | ep  74 | 166.1s | loss 0.4857 (seg 0.1199 dice 0.6879 aux 0.0761 bnd 0.0000 sev 0.0572 cons 0.0185) | val mIoU 0.4264 dis 0.3726 dice 0.5505 f1 0.5057 | sev 0.433 w1 0.800 rmae 0.077 | lr 4.6e-05
+2026-10-22 12:59:39,867 | INFO    | ep  75 | 165.8s | loss 0.4743 (seg 0.1116 dice 0.6863 aux 0.0709 bnd 0.0000 sev 0.0461 cons 0.0168) | val mIoU 0.4055 dis 0.3496 dice 0.5272 f1 0.4800 | sev 0.400 w1 0.756 rmae 0.086 | lr 4.6e-05
+2026-10-22 13:02:25,953 | INFO    | ep  76 | 166.1s | loss 0.4933 (seg 0.1277 dice 0.6857 aux 0.0855 bnd 0.0000 sev 0.0479 cons 0.0175) | val mIoU 0.4257 dis 0.3727 dice 0.5517 f1 0.5076 | sev 0.422 w1 0.767 rmae 0.092 | lr 4.5e-05
+2026-10-22 13:05:11,947 | INFO    | ep  77 | 166.0s | loss 0.4755 (seg 0.1132 dice 0.6837 aux 0.0734 bnd 0.0000 sev 0.0505 cons 0.0160) | val mIoU 0.3881 dis 0.3315 dice 0.5007 f1 0.4512 | sev 0.389 w1 0.778 rmae 0.086 | lr 4.5e-05
+2026-10-22 13:07:58,512 | INFO    | ep  78 | 166.6s | loss 0.4995 (seg 0.1316 dice 0.6886 aux 0.0832 bnd 0.0000 sev 0.0608 cons 0.0176) | val mIoU 0.4109 dis 0.3561 dice 0.5359 f1 0.4900 | sev 0.322 w1 0.778 rmae 0.088 | lr 4.5e-05
+2026-10-22 13:07:58,512 | INFO    | early stopping: no val mIoU improvement for 30 epochs
+2026-10-22 13:07:59,408 | INFO    | training done. best val mIoU 0.4281 @ epoch 48
+2026-10-22 13:08:01,271 | INFO    | UnifiedSegDataset[test]: 160 records (160 PlantSeg, 0 Roboflow)
+2026-10-22 13:08:29,236 | INFO    | 
+2026-10-22 13:08:29,236 | INFO    | === PlantSeg TEST results (ckpt epoch 48) ===
+2026-10-22 13:08:29,236 | INFO    |   mIoU          0.4126   (PlantSeg baseline 0.4452)
+2026-10-22 13:08:29,236 | INFO    |   disease mIoU  0.3588
+2026-10-22 13:08:29,236 | INFO    |   Dice          0.5386
+2026-10-22 13:08:29,236 | INFO    |   pixel acc     0.8767
+2026-10-22 13:08:29,236 | INFO    |   disease F1    0.4934
+2026-10-22 13:08:29,236 | INFO    |   severity acc  0.4375
+2026-10-22 13:08:29,236 | INFO    |   severity w/in1 0.8250
+2026-10-22 13:08:29,236 | INFO    |   ratio MAE     0.0955
+2026-10-22 13:08:29,236 | INFO    | 
+2026-10-22 13:08:29,236 | INFO    |     background                       IoU 0.8967  F1 0.9455
+2026-10-22 13:08:29,236 | INFO    |     potato_early_blight              IoU 0.1207  F1 0.2154
+2026-10-22 13:08:29,236 | INFO    |     potato_late_blight               IoU 0.6400  F1 0.7805
+2026-10-22 13:08:29,236 | INFO    |     tomato_bacterial_leaf_spot       IoU 0.2326  F1 0.3774
+2026-10-22 13:08:29,236 | INFO    |     tomato_early_blight              IoU 0.4996  F1 0.6664
+2026-10-22 13:08:29,236 | INFO    |     tomato_late_blight               IoU 0.5370  F1 0.6987
+2026-10-22 13:08:29,236 | INFO    |     tomato_leaf_mold                 IoU 0.5998  F1 0.7499
+2026-10-22 13:08:29,236 | INFO    |     tomato_mosaic_virus              IoU 0.0661  F1 0.1241
+2026-10-22 13:08:29,236 | INFO    |     tomato_septoria_leaf_spot        IoU 0.1842  F1 0.3111
+2026-10-22 13:08:29,236 | INFO    |     tomato_yellow_leaf_curl_virus    IoU 0.3490  F1 0.5174
+2026-10-22 13:08:29,537 | INFO    | wrote results_summary.csv
+2026-10-22 13:08:29,654 | INFO    | wrote perclass_iou.png

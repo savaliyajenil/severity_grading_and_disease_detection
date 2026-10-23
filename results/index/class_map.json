@@ -1,0 +1,41 @@
+{
+  "num_classes": 10,
+  "class_names": [
+    "background",
+    "potato_early_blight",
+    "potato_late_blight",
+    "tomato_bacterial_leaf_spot",
+    "tomato_early_blight",
+    "tomato_late_blight",
+    "tomato_leaf_mold",
+    "tomato_mosaic_virus",
+    "tomato_septoria_leaf_spot",
+    "tomato_yellow_leaf_curl_virus"
+  ],
+  "disease_to_class": {
+    "potato early blight": 1,
+    "potato late blight": 2,
+    "tomato bacterial leaf spot": 3,
+    "tomato early blight": 4,
+    "tomato late blight": 5,
+    "tomato leaf mold": 6,
+    "tomato mosaic virus": 7,
+    "tomato septoria leaf spot": 8,
+    "tomato yellow leaf curl virus": 9
+  },
+  "disease_to_mask_value": {
+    "potato early blight": 76,
+    "potato late blight": 77,
+    "tomato bacterial leaf spot": 97,
+    "tomato early blight": 98,
+    "tomato late blight": 99,
+    "tomato leaf mold": 100,
+    "tomato mosaic virus": 101,
+    "tomato septoria leaf spot": 102,
+    "tomato yellow leaf curl virus": 103
+  },
+  "roboflow_to_class": {
+    "Early Blight": 1,
+    "Late Blight": 2
+  }
+}

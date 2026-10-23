@@ -1,0 +1,11 @@
+2026-10-01 14:50:29,254 | INFO    | device=cuda run=plantseg_novelty_200ep
+2026-10-01 14:50:29,254 | INFO    | encoder=resnet101 pretrained=True
+2026-10-01 14:50:29,254 | INFO    | train = PlantSeg train + Roboflow potato | val/test = PlantSeg only
+2026-10-01 14:50:29,272 | INFO    | UnifiedSegDataset[train]: 1186 records (563 PlantSeg, 623 Roboflow)
+2026-10-01 14:50:29,288 | INFO    | UnifiedSegDataset[val]: 90 records (90 PlantSeg, 0 Roboflow)
+2026-10-01 14:50:29,288 | INFO    | weighted sampler: rarest class weight 2.54e-04, most common 3.85e-03
+2026-10-01 14:50:29,288 | INFO    | train batches=296 val batches=23
+2026-10-01 14:50:30,020 | INFO    | params 59.28M  classes=10
+2026-10-01 14:51:43,791 | INFO    | ep   1 |  73.8s | loss 3.1159 (seg 2.1317 sev 0.6745 cons 0.6195) | val mIoU 0.0987 dis 0.0274 dice 0.1313 f1 0.0514 | sev 1.000 w1 1.000 rmae 0.111 | lr 1.2e-05  <- best
+2026-10-01 14:52:36,367 | INFO    | ep   2 |  52.6s | loss 2.1276 (seg 1.3562 sev 0.6166 cons 0.3096) | val mIoU 0.1234 dis 0.0427 dice 0.1595 f1 0.0751 | sev 1.000 w1 1.000 rmae 0.103 | lr 2.4e-05  <- best
+2026-10-01 14:53:29,820 | INFO    | ep   3 |  53.5s | loss 1.5168 (seg 0.8733 sev 0.5896 cons 0.1076) | val mIoU 0.1413 dis 0.0615 dice 0.1881 f1 0.1062 | sev 1.000 w1 1.000 rmae 0.099 | lr 3.6e-05  <- best

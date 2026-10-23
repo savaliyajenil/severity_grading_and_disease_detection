@@ -1,0 +1,22 @@
+2026-10-06 13:49:40,079 | INFO    | UnifiedSegDataset[test]: 160 records (160 PlantSeg, 0 Roboflow)
+2026-10-06 13:49:52,245 | INFO    | 
+2026-10-06 13:49:52,245 | INFO    | === PlantSeg TEST results (ckpt epoch 37) ===
+2026-10-06 13:49:52,245 | INFO    |   mIoU          0.3309   (PlantSeg baseline 0.4452)
+2026-10-06 13:49:52,245 | INFO    |   disease mIoU  0.2697
+2026-10-06 13:49:52,245 | INFO    |   Dice          0.4504
+2026-10-06 13:49:52,245 | INFO    |   pixel acc     0.8671
+2026-10-06 13:49:52,245 | INFO    |   disease F1    0.3963
+2026-10-06 13:49:52,245 | INFO    |   severity acc  0.3562
+2026-10-06 13:49:52,245 | INFO    |   severity w/in1 0.7563
+2026-10-06 13:49:52,245 | INFO    |   ratio MAE     0.1079
+2026-10-06 13:49:52,245 | INFO    | 
+2026-10-06 13:49:52,245 | INFO    |     background                       IoU 0.8822  F1 0.9374
+2026-10-06 13:49:52,245 | INFO    |     potato_early_blight              IoU 0.0536  F1 0.1018
+2026-10-06 13:49:52,245 | INFO    |     potato_late_blight               IoU 0.3296  F1 0.4957
+2026-10-06 13:49:52,245 | INFO    |     tomato_bacterial_leaf_spot       IoU 0.0740  F1 0.1378
+2026-10-06 13:49:52,245 | INFO    |     tomato_early_blight              IoU 0.4544  F1 0.6248
+2026-10-06 13:49:52,245 | INFO    |     tomato_late_blight               IoU 0.4207  F1 0.5922
+2026-10-06 13:49:52,245 | INFO    |     tomato_leaf_mold                 IoU 0.5272  F1 0.6904
+2026-10-06 13:49:52,245 | INFO    |     tomato_mosaic_virus              IoU 0.1030  F1 0.1868
+2026-10-06 13:49:52,245 | INFO    |     tomato_septoria_leaf_spot        IoU 0.1442  F1 0.2521
+2026-10-06 13:49:52,245 | INFO    |     tomato_yellow_leaf_curl_virus    IoU 0.3203  F1 0.4852

@@ -1,0 +1,18 @@
+{
+  "run_name": "samtseg_v3_refixed_seed_0",
+  "params_M": 52.163151,
+  "best_val_miou": 0.42805033922195435,
+  "best_epoch": 48,
+  "config": {
+    "encoder": "mscan_l",
+    "pretrained": true,
+    "use_cbam": true,
+    "epochs": 300,
+    "batch_size": 3,
+    "lambda_sev": 0.1,
+    "lambda_cons": 0.05,
+    "lambda_bdry": 0.0,
+    "lambda_dice": 0.5,
+    "lambda_aux": 0.2
+  }
+}

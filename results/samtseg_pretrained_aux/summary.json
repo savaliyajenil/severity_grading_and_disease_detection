@@ -1,0 +1,12 @@
+{
+  "run_name": "samtseg_pretrained_aux",
+  "params_M": 59.276718,
+  "best_val_miou": 0.37832924723625183,
+  "best_epoch": 49,
+  "config": {
+    "encoder": "resnet101",
+    "pretrained": true,
+    "epochs": 500,
+    "batch_size": 4
+  }
+}

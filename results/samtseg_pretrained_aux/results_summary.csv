@@ -1,0 +1,28 @@
+Metric,Value
+model,SAMTSeg resnet101 + ASPP + severity head (novelty)
+num_classes,10
+optimizer,"AdamW lr=6e-05 betas=(0.9,0.999) wd=0.01"
+schedule,"PolyLR power=1.0, warmup=1500 (epoch-based)"
+batch_size,4
+crop_size,512x512
+best_val_mIoU,0.37832924723625183
+test_mIoU,0.3509
+test_disease_mIoU,0.2922
+test_mDice,0.4861
+test_pixel_acc,0.8593
+test_disease_F1,0.4361
+test_sev_grade_acc,0.4437
+test_sev_within1_acc,0.8250
+test_ratio_mae,0.1016
+
+Per-class test IoU,
+test_iou_background,0.8793
+test_iou_potato_early_blight,0.2538
+test_iou_potato_late_blight,0.4315
+test_iou_tomato_bacterial_leaf_spot,0.0889
+test_iou_tomato_early_blight,0.2588
+test_iou_tomato_late_blight,0.4587
+test_iou_tomato_leaf_mold,0.4923
+test_iou_tomato_mosaic_virus,0.2826
+test_iou_tomato_septoria_leaf_spot,0.1566
+test_iou_tomato_yellow_leaf_curl_virus,0.2067

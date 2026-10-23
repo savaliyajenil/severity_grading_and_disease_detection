@@ -1,0 +1,20 @@
+{
+  "run_name": "samtseg_v3_boundary",
+  "params_M": 52.163151,
+  "best_val_miou": 0.461219847202301,
+  "best_epoch": 110,
+  "config": {
+    "encoder": "mscan_l",
+    "pretrained": true,
+    "use_cbam": true,
+    "epochs": 500,
+    "batch_size": 4,
+    "crop_size": 640,
+    "lambda_sev": 0.1,
+    "lambda_cons": 0.05,
+    "lambda_dice": 0.5,
+    "lambda_aux": 0.2,
+    "lambda_bdry": 0.3,
+    "ema_decay": 0.999
+  }
+}
