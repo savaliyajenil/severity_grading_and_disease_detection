@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pth
+*.whl
+checkpoints/
+mmcv/
+mmcv_local/
+potato-leaf-disease-segmentation-4g26g/
+SegNeXt/pretrained/
+*.egg-info/
